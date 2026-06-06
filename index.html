@@ -55,7 +55,7 @@
     <!-- HERO -->
     <section class="hero" id="top">
       <div class="hero-bg"></div>
-      <div class="rain-layer" id="rainLayer"></div>
+
 
       <div class="hero-content">
         <div class="hero-badge">
@@ -70,7 +70,7 @@
         <h1>Auto<em>Canvas</em></h1>
         <p class="hero-sub">
           내 차에 딱 맞는 프리미엄 액세서리를 찾기 어려운 당신을 위해.<br />
-          차종별 rlsdmd 제공합니다.
+          차종별 제공합니다.
         </p>
         <div class="hero-meta">
           <div class="meta-item">
@@ -1078,7 +1078,6 @@
       /* ============================================================
        1. Core Elements & Setup
     ============================================================ */
-      const rainLayer = document.getElementById("rainLayer");
       const magneticElements = document.querySelectorAll(
         "nav .nav-logo a, nav ul li a, nav .nav-tag, .hero-badge, .footer-links a, .footer-logo",
       );
@@ -1089,21 +1088,6 @@
         ".section-title, .outro-title-main, .feat-main-title, .feat-block-title, .ds-split-title",
       );
       const aiChatSection = document.querySelector(".ai-chat-section");
-
-      /* ============================================================
-       2. Speed Lines Animation (Adapted from rain animation)
-    ============================================================ */
-      for (let i = 0; i < 40; i++) {
-        const drop = document.createElement("div");
-        drop.className = "rain-drop";
-        const left = Math.random() * 120 - 10; // Extra width for diagonal flow
-        const height = Math.random() * 80 + 60; // Slightly longer for speed lines
-        const duration = Math.random() * 1.8 + 0.8;
-        const delay = Math.random() * 3;
-        const opacity = Math.random() * 0.4 + 0.15;
-        drop.style.cssText = `left:${left}%;height:${height}px;animation-duration:${duration}s;animation-delay:${delay}s;opacity:${opacity}`;
-        rainLayer.appendChild(drop);
-      }
 
       /* ============================================================
        3. Light Beam Cursor & Magnetic Logic

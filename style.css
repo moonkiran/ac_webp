@@ -189,38 +189,7 @@ nav ul a:hover {
   z-index: 0;
 }
 
-/* Speed lines layer */
-.rain-layer {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  overflow: hidden;
-}
 
-.rain-drop {
-  position: absolute;
-  top: -120px;
-  width: 1px;
-  height: 80px;
-  background: linear-gradient(to bottom, transparent, rgba(200, 138, 88, 0.4));
-  border-radius: 1px;
-  transform: rotate(-15deg);
-  animation: speed-line-fall linear infinite;
-}
-
-@keyframes speed-line-fall {
-  0% {
-    transform: translateY(-100px) rotate(-15deg);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(120vh) rotate(-15deg);
-    opacity: 0;
-  }
-}
 
 .hero-content {
   position: relative;
