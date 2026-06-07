@@ -214,7 +214,7 @@ nav ul a:hover {
 .hero-icon {
   font-size: 88px;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   filter: drop-shadow(0 12px 32px rgba(200, 138, 88, 0.25));
   animation: float 4s ease-in-out infinite;
 }
