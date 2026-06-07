@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --sky: #f4f2f0; /* Soft warm beige/white */
   --sky-mid: #d6c3b6; /* User beige/sand */
   --blue: #c88a58; /* User caramel/leather */
@@ -1853,14 +1853,14 @@ nav ul a:hover {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  box-shadow: 0 10px 40px rgba(108, 92, 231, 0.05);
-  border: 1px solid rgba(108, 92, 231, 0.1);
+  box-shadow: 0 10px 40px rgba(200, 138, 88, 0.05);
+  border: 1px solid rgba(200, 138, 88, 0.1);
 }
 
 .ds-card-label {
   font-size: 14px;
   font-weight: 700;
-  color: #6c5ce7;
+  color: #c88a58;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -1874,7 +1874,7 @@ nav ul a:hover {
 .char-img-wrap {
   width: 200px;
   height: 200px;
-  background: #6c5ce7;
+  background: #c88a58;
   border-radius: 40px;
   display: flex;
   align-items: center;
@@ -1890,13 +1890,13 @@ nav ul a:hover {
 
 .char-info h3 {
   font-size: 28px;
-  color: #1b0d3a;
+  color: #1d1d1f;
   margin-bottom: 12px;
 }
 
 .char-info h3 em {
   font-style: normal;
-  color: #6c5ce7;
+  color: #c88a58;
 }
 
 .char-info p {
@@ -1923,7 +1923,7 @@ nav ul a:hover {
 .ds-card-title {
   font-size: 18px;
   font-weight: 700;
-  color: #1b0d3a;
+  color: #1d1d1f;
   margin-bottom: 24px;
 }
 
@@ -1955,7 +1955,7 @@ nav ul a:hover {
 .color-info span:first-child {
   font-size: 13px;
   font-weight: 600;
-  color: #1b0d3a;
+  color: #1d1d1f;
 }
 
 .color-info span:last-child {
@@ -1975,7 +1975,7 @@ nav ul a:hover {
   flex-direction: column;
   gap: 4px;
   font-weight: 700;
-  color: #1b0d3a;
+  color: #1d1d1f;
 }
 
 .typo-row span {
@@ -2006,7 +2006,7 @@ nav ul a:hover {
 .ds-toggle-sim {
   width: 80px;
   height: 34px;
-  background: #6c5ce7;
+  background: #c88a58;
   border-radius: 17px;
   color: white;
   font-size: 12px;
@@ -2030,7 +2030,7 @@ nav ul a:hover {
 }
 
 .ds-btn-sim {
-  background: #6c5ce7;
+  background: #c88a58;
   color: white;
   padding: 12px;
   border-radius: 12px;
@@ -2087,7 +2087,7 @@ nav ul a:hover {
 .ds-card-num {
   font-family: "Manrope", sans-serif;
   font-weight: 800;
-  color: #6c5ce7;
+  color: #c88a58;
   font-size: 14px;
   opacity: 0.5;
 }
@@ -2095,7 +2095,7 @@ nav ul a:hover {
 .ds-card-title {
   font-size: 18px;
   font-weight: 700;
-  color: #1b0d3a;
+  color: #1d1d1f;
 }
 
 .ds-card-text {
@@ -2125,7 +2125,7 @@ nav ul a:hover {
 .ds-color-info span:first-child {
   font-size: 13px;
   font-weight: 600;
-  color: #1b0d3a;
+  color: #1d1d1f;
 }
 
 .ds-color-info span:last-child {
@@ -2142,7 +2142,7 @@ nav ul a:hover {
 .ds-sim-toggle {
   width: 70px;
   height: 30px;
-  background: #6c5ce7;
+  background: #c88a58;
   border-radius: 15px;
   color: white;
   font-size: 11px;
@@ -2166,7 +2166,7 @@ nav ul a:hover {
 }
 
 .ds-sim-btn {
-  background: #6c5ce7;
+  background: #c88a58;
   color: white;
   padding: 10px;
   border-radius: 10px;
@@ -2195,20 +2195,20 @@ nav ul a:hover {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  --line-color: #cbd5e0;
-  /* Unified Blue Hierarchy */
-  --level1-bg: #1a365d;
-  --level1-border: #2a4365;
-  --level1-text: #ffffff;
-  /* Deep Navy */
-  --level2-bg: #ebf8ff;
-  --level2-border: #3182ce;
-  --level2-text: #2c5282;
-  /* Brand Blue */
-  --level3-bg: #f0f9ff;
-  --level3-border: #63b3ed;
-  --level3-text: #2b6cb0;
-  /* Sky Blue */
+  --line-color: var(--sky-mid);
+  /* Unified Brand Warm Hierarchy */
+  --level1-bg: var(--blue);
+  --level1-border: #b07545;
+  --level1-text: #1d1d1f;
+  /* Caramel Orange */
+  --level2-bg: rgba(200, 138, 88, 0.08);
+  --level2-border: rgba(200, 138, 88, 0.4);
+  --level2-text: #1d1d1f;
+  /* Light Orange */
+  --level3-bg: #ffffff;
+  --level3-border: rgba(200, 138, 88, 0.2);
+  --level3-text: #1d1d1f;
+  /* White with warm border */
 }
 
 /* Node Styles */
@@ -2218,7 +2218,7 @@ nav ul a:hover {
   font-weight: 800;
   font-size: 16px;
   text-align: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
   position: relative;
   z-index: 2;
   transition: transform 0.2s ease;
@@ -2259,21 +2259,23 @@ nav ul a:hover {
 
 .ia-sub-box {
   background: white;
-  border: 1px solid #edf2f7;
+  border: 1px solid rgba(200, 138, 88, 0.12);
   padding: 8px 12px;
   border-radius: 8px;
   font-size: 12px;
-  color: #4a5568;
+  color: #1d1d1f;
   text-align: center;
-  font-weight: 500;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.01);
   transition: all 0.2s ease;
 }
 
 .ia-sub-box:hover {
-  border-color: var(--blue-border);
-  color: var(--blue-text);
+  border-color: var(--blue);
+  background: rgba(200, 138, 88, 0.05);
+  color: #1d1d1f;
   transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(200, 138, 88, 0.1);
 }
 
 /* Lines */
@@ -2676,8 +2678,8 @@ nav ul a:hover {
   background: white;
   padding: 28px 36px;
   border-radius: 24px;
-  border: 1px solid rgba(108, 92, 231, 0.2);
-  box-shadow: 0 10px 30px rgba(108, 92, 231, 0.08);
+  border: 1px solid rgba(200, 138, 88, 0.2);
+  box-shadow: 0 10px 30px rgba(200, 138, 88, 0.08);
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -2685,14 +2687,14 @@ nav ul a:hover {
 
 .logo-desc-item:hover {
   transform: translateY(-4px);
-  box-shadow: 0 15px 40px rgba(108, 92, 231, 0.12);
+  box-shadow: 0 15px 40px rgba(200, 138, 88, 0.12);
 }
 
 .desc-num {
   font-family: "Manrope", sans-serif;
   font-size: 52px;
   font-weight: 800;
-  color: #a89cf0;
+  color: #e8b792;
   line-height: 1;
 }
 
@@ -2706,7 +2708,7 @@ nav ul a:hover {
 
 .desc-text em {
   font-style: normal;
-  color: #5a48d1;
+  color: #c88a58;
   font-weight: 700;
 }
 
@@ -2717,7 +2719,7 @@ nav ul a:hover {
   gap: 60px;
   margin-top: 80px;
   padding-top: 60px;
-  border-top: 1px solid rgba(108, 92, 231, 0.2);
+  border-top: 1px solid rgba(200, 138, 88, 0.2);
 }
 
 .ds-split-img {
@@ -2729,7 +2731,7 @@ nav ul a:hover {
   height: auto;
   border-radius: 20px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(108, 92, 231, 0.1);
+  border: 1px solid rgba(200, 138, 88, 0.1);
 }
 
 .ds-split-text {
@@ -2750,7 +2752,7 @@ nav ul a:hover {
   font-size: 1.2em;
   /* 20% 더 크게 */
   font-style: normal;
-  color: #5a48d1;
+  color: #c88a58;
 }
 
 .ds-split-desc {
