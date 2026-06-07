@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --sky: #f4f2f0; /* Soft warm beige/white */
   --sky-mid: #d6c3b6; /* User beige/sand */
   --blue: #c88a58; /* User caramel/leather */
@@ -163,7 +163,7 @@ nav ul a:hover {
   font-size: 11px;
   font-weight: 500;
   color: var(--blue);
-  background: rgba(47, 127, 193, 0.1);
+  background: rgba(200, 138, 88, 0.1);
   padding: 4px 12px;
   border-radius: 20px;
   letter-spacing: 0.06em;
@@ -384,7 +384,7 @@ nav ul a:hover {
 }
 
 .tag-rain {
-  background: rgba(47, 127, 193, 0.12);
+  background: rgba(200, 138, 88, 0.12);
   color: var(--blue);
 }
 
@@ -480,7 +480,7 @@ nav ul a:hover {
 }
 
 .problem-card:hover {
-  box-shadow: 0 16px 48px rgba(47, 127, 193, 0.12);
+  box-shadow: 0 16px 48px rgba(200, 138, 88, 0.12);
 }
 
 .problem-num {
@@ -787,7 +787,7 @@ nav ul a:hover {
   top: 0;
   bottom: 0;
   width: 1px;
-  background: rgba(47, 127, 193, 0.35);
+  background: rgba(200, 138, 88, 0.35);
 }
 
 .flow-connector-arrow {
@@ -909,7 +909,7 @@ nav ul a:hover {
 
 .feat-badge-blue {
   color: var(--blue);
-  background: rgba(47, 127, 193, 0.1);
+  background: rgba(200, 138, 88, 0.1);
 }
 
 .feat-badge-amber {
