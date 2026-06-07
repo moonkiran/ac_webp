@@ -976,6 +976,7 @@ nav ul a:hover {
   height: 10px;
   border-radius: 50%;
   display: inline-block;
+  flex-shrink: 0;
 }
 
 .preview-dot.red { background: #ff5f56; }
@@ -1031,6 +1032,7 @@ nav ul a:hover {
 
 .car-emoji {
   font-size: 18px;
+  flex-shrink: 0;
 }
 
 .car-details {
@@ -1068,6 +1070,7 @@ nav ul a:hover {
 .toggle-switch {
   width: 36px;
   height: 20px;
+  flex-shrink: 0;
   background: #ccc;
   border-radius: 10px;
   position: relative;
@@ -1101,49 +1104,80 @@ nav ul a:hover {
 
 .mini-product-card {
   background: var(--white);
-  border-radius: 16px;
-  padding: 14px;
-  border: 1px solid rgba(200, 138, 88, 0.1);
+  border-radius: 24px;
+  padding: 16px;
+  border: 1px solid rgba(200, 138, 88, 0.12);
   width: 100%;
+  max-width: 260px;
   position: relative;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
 }
 
 .badge-100 {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  background: rgba(200, 138, 88, 0.12);
-  color: var(--blue);
-  font-size: 9px;
+  top: 26px;
+  left: 26px;
+  background: rgba(252, 246, 240, 0.9);
+  border: 1px solid rgba(200, 138, 88, 0.25);
+  color: #c88a58;
+  font-size: 11px;
   font-weight: 700;
-  padding: 3px 8px;
+  padding: 4px 10px;
   border-radius: 20px;
+  z-index: 2;
 }
 
 .product-placeholder {
-  height: 120px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, var(--sky-mid) 0%, var(--blue) 100%);
+  height: 180px;
+  border-radius: 16px;
+  background: #fcfcfc;
   margin-bottom: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 이미지가 없거나 비어있는 경우 그라데이션 배경만 보이도록 처리 */
+.product-placeholder img[src=""],
+.product-placeholder img:not([src]) {
+  display: none;
 }
 
 .product-info {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  align-items: center;
+  text-align: center;
+  margin-top: 14px;
 }
 
 .prod-title {
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--ink);
+  font-size: 15px;
+  font-weight: 700;
+  color: #1d1d1f;
+}
+
+.prod-rating {
+  color: #c88a58;
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-top: 2px;
 }
 
 .prod-price {
-  font-size: 11px;
-  font-weight: 700;
-  color: var(--blue);
+  font-size: 16px;
+  font-weight: 800;
+  color: #1d1d1f;
+  margin-top: 4px;
 }
 
 .feat-info-col {
@@ -1361,6 +1395,7 @@ nav ul a:hover {
 .hotspot-pulse {
   width: 14px;
   height: 14px;
+  flex-shrink: 0;
   background: var(--blue);
   border: 2px solid white;
   border-radius: 50%;
@@ -2435,6 +2470,7 @@ nav ul a:hover {
 .nav-btn {
   width: 22px;
   height: 22px;
+  flex-shrink: 0;
   color: #007aff;
   cursor: pointer;
   display: flex;
