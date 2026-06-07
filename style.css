@@ -1297,6 +1297,27 @@ nav ul a:hover {
   z-index: 1;
 }
 
+.coll-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.collection-item:hover .coll-bg-img {
+  transform: scale(1.05);
+}
+
+/* 이미지가 지정되지 않았을 때는 기존 그라데이션 배경을 보여주도록 처리 */
+.coll-bg-img[src=""],
+.coll-bg-img:not([src]) {
+  display: none;
+}
+
 .coll-content {
   position: relative;
   z-index: 2;
@@ -1329,15 +1350,29 @@ nav ul a:hover {
 }
 
 .btn-mini-link {
-  font-size: 12px;
+  display: inline-block;
+  font-size: 13px;
   font-weight: 600;
-  color: var(--sky-mid);
-  transition: color 0.2s;
+  color: white !important;
+  background-color: #c88a58;
+  padding: 8px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   align-self: flex-start;
+  box-shadow: 0 4px 12px rgba(200, 138, 88, 0.2);
+  cursor: pointer;
+}
+
+.btn-mini-link:hover {
+  background-color: #b07545;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(200, 138, 88, 0.35);
 }
 
 .collection-item:hover .btn-mini-link {
-  color: white;
+  background-color: #b07545;
+  transform: translateY(-2px);
 }
 
 /* ── FEATURE 03: Style Feed ── */
