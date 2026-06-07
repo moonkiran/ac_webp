@@ -1,0 +1,10 @@
+$content = [System.IO.File]::ReadAllText("style.css", [System.Text.Encoding]::UTF8)
+$content = $content.Replace("108, 92, 231", "200, 138, 88")
+$content = $content.Replace("6c5ce7", "c88a58")
+$content = $content.Replace("6C5CE7", "c88a58")
+$content = $content.Replace("5a48d1", "c88a58")
+$content = $content.Replace("5A48D1", "c88a58")
+$content = $content.Replace("a89cf0", "f0caab")
+$content = $content.Replace("A89CF0", "f0caab")
+[System.IO.File]::WriteAllText("style.css", $content, [System.Text.Encoding]::UTF8)
+Write-Output "SUCCESS"
