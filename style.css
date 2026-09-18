@@ -453,14 +453,12 @@ nav ul a:hover {
   margin: 0 auto 50px;
 }
 
-/* ?�?� PROBLEM SECTION ?�?� */
-
 /* PROBLEM SECTION */
 .problem-layout-body {
   display: flex;
   flex-direction: column;
-  gap: 56px;
-  margin-top: 48px;
+  gap: 96px;
+  margin-top: 60px;
 }
 
 .problem-sub-group {
@@ -543,7 +541,7 @@ nav ul a:hover {
 }
 
 .problem-title {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
   color: var(--ink);
   margin-bottom: 10px;
@@ -551,7 +549,7 @@ nav ul a:hover {
 }
 
 .problem-desc {
-  font-size: 13px;
+  font-size: 12px;
   color: var(--ink-soft);
   line-height: 1.75;
   font-weight: 400;
@@ -679,15 +677,17 @@ nav ul a:hover {
   font-size: 18px;
   font-weight: 800;
   color: var(--ink);
-  margin-bottom: 4px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
 }
 
-.persona-age-job {
-  font-size: 12px;
-  color: var(--blue);
+.persona-age {
+  font-family: "Hahmlet", sans-serif;
+  font-size: 13px;
   font-weight: 600;
-  margin-bottom: 16px;
-  letter-spacing: 0.03em;
+  color: #6B6B6B;
 }
 
 .persona-tags {
