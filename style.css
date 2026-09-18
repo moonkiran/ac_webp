@@ -149,6 +149,7 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 48px;
+  white-space: nowrap;
 }
 
 nav ul a {
@@ -158,6 +159,7 @@ nav ul a {
   color: var(--ink-soft);
   letter-spacing: 0.05em;
   transition: color 0.2s;
+  white-space: nowrap;
 }
 
 nav ul a:hover {
@@ -871,9 +873,15 @@ nav ul a:hover {
   transition-delay: 0.3s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1120px) {
   nav ul {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 16px 24px;
   }
 
   .flow-grid,
