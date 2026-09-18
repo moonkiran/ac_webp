@@ -468,12 +468,17 @@ nav ul a:hover {
 }
 
 .problem-sub-title {
+  display: inline-block;
+  align-self: flex-start;
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 21px;
-  font-weight: 800;
-  color: #A67844;
-  letter-spacing: -0.01em;
-  text-align: left;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 20px;
+  color: var(--blue);
+  background: rgba(191, 141, 96, 0.1);
 }
 
 .why-card {
