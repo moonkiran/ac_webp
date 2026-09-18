@@ -1,19 +1,19 @@
 :root {
-  /* ?�?� 4-Color Theme Palette ?�?� */
-  --primary: #1C1C1E;         /* ?�스??- ?�더, ?�목, 주요 버튼 */
-  --secondary: #6B6B6B;       /* ?�스???�생 - ?�브?�스?? 보조 */
-  --accent: #BF8D60;          /* ?�인??- CTA, 가�?강조, ?�인??*/
-  --bg: #FFFFFF;              /* 배경 메인 - ?�색 */
-  --surface: #F7F7F7;         /* 배경 ?�브 - 카드, ?�품 ?�역 */
-  --border: #E5E5E5;          /* 경계???�생 */
-  --text: #1C1C1E;            /* 본문 ?�스??*/
-  --muted: #999999;           /* 보조 ?�보 */
+  /*  4-Color Theme Palette  */
+  --primary: #1C1C1E;         
+  --secondary: #6B6B6B;       
+  --accent: #BF8D60;          
+  --bg: #FFFFFF;            
+  --surface: #F7F7F7;         
+  --border: #E5E5E5;          
+  --text: #1C1C1E;            
+  --muted: #999999;           
 
   /* Legacy aliases */
   --sky: #F7F7F7;
   --sky-mid: #E5E5E5;
-  --blue: #BF8D60;            /* ?�인??컬러 */
-  --blue-deep: #1C1C1E;       /* ?�스??컬러 */
+  --blue: #BF8D60;            
+  --blue-deep: #1C1C1E;       
   --rain: #E5E5E5;
   --cream: #FFFFFF;
   --ink: #1C1C1E;
@@ -22,6 +22,11 @@
   --white: #FFFFFF;
   --card-bg: rgba(255, 255, 255, 0.95);
   --section-gap: 120px;
+
+  /* Typography System */
+  --font-display: "Hahmlet", serif;
+  --font-sans: "Noto Sans KR", sans-serif;
+  --font-num: "Inter", sans-serif;
 }
 
 * {
@@ -407,6 +412,7 @@ nav ul a:hover {
 }
 
 .section-label {
+  font-family: var(--font-num), var(--font-sans);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.16em;
@@ -429,7 +435,7 @@ nav ul a:hover {
 }
 
 .section-title {
-  font-family: "Hahmlet", serif;
+  font-family: var(--font-display);
   font-size: clamp(32px, 5vw, 48px);
   font-weight: 600;
   color: var(--ink);
@@ -444,6 +450,7 @@ nav ul a:hover {
 }
 
 .section-desc {
+  font-family: var(--font-sans);
   font-size: 20px;
   color: var(--ink-soft);
   line-height: 1.85;
@@ -470,7 +477,7 @@ nav ul a:hover {
 .problem-sub-title {
   display: inline-block;
   align-self: flex-start;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: var(--font-num), var(--font-sans);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -530,7 +537,7 @@ nav ul a:hover {
 }
 
 .problem-num {
-  font-family: "Hahmlet", sans-serif;
+  font-family: var(--font-num);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -546,15 +553,27 @@ nav ul a:hover {
 }
 
 .problem-title {
-  font-size: 14px;
-  font-weight: 700;
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 600;
   color: var(--ink);
   margin-bottom: 10px;
-  line-height: 1.4;
+  line-height: 1.45;
+}
+
+.title-num {
+  font-family: var(--font-num);
+  font-weight: 700;
+  font-style: normal;
+  color: var(--blue);
+  margin-right: 5px;
+  display: inline-block;
+  letter-spacing: -0.01em;
 }
 
 .problem-desc {
-  font-size: 12px;
+  font-family: var(--font-sans);
+  font-size: 13px;
   color: var(--ink-soft);
   line-height: 1.75;
   font-weight: 400;
@@ -678,9 +697,9 @@ nav ul a:hover {
 }
 
 .persona-name {
-  font-family: "Hahmlet", sans-serif;
-  font-size: 18px;
-  font-weight: 800;
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
   color: var(--ink);
   margin-bottom: 16px;
   display: flex;
@@ -689,7 +708,7 @@ nav ul a:hover {
 }
 
 .persona-age {
-  font-family: "Hahmlet", sans-serif;
+  font-family: var(--font-num), var(--font-sans);
   font-size: 13px;
   font-weight: 600;
   color: #6B6B6B;
@@ -703,6 +722,7 @@ nav ul a:hover {
 }
 
 .persona-tag {
+  font-family: var(--font-sans);
   font-size: 11px;
   font-weight: 500;
   padding: 4px 10px;
@@ -713,6 +733,7 @@ nav ul a:hover {
 }
 
 .persona-story {
+  font-family: var(--font-sans);
   font-size: 14px;
   color: var(--ink-soft);
   line-height: 1.75;
@@ -743,10 +764,10 @@ nav ul a:hover {
 }
 
 .persona-pain-label {
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
   color: var(--accent);
   margin-bottom: 8px;
 }
@@ -948,6 +969,7 @@ nav ul a:hover {
 }
 
 .feat-num-badge {
+  font-family: var(--font-num);
   display: inline-block;
   font-size: 11px;
   font-weight: 700;
@@ -969,9 +991,9 @@ nav ul a:hover {
 }
 
 .feat-block-title {
-  font-family: "Hahmlet", serif;
+  font-family: var(--font-display);
   font-size: clamp(22px, 3vw, 32px);
-  font-weight: 400;
+  font-weight: 600;
   color: var(--ink);
   margin-bottom: 12px;
   line-height: 1.25;
@@ -983,6 +1005,7 @@ nav ul a:hover {
 }
 
 .feat-block-desc {
+  font-family: var(--font-sans);
   font-size: 15px;
   color: var(--ink-soft);
   line-height: 1.9;
@@ -996,7 +1019,7 @@ nav ul a:hover {
   font-weight: 600;
 }
 
-/* ?�?� FEATURE 01: Compatibility Filter ?�?� */
+/* ?? FEATURE 01: Compatibility Filter ?? */
 .feat-grid-layout {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
@@ -1023,31 +1046,16 @@ nav ul a:hover {
 }
 
 .preview-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  display: inline-block;
-  flex-shrink: 0;
-}
-
-.preview-dot.red {
-  background: #ff5f56;
-}
-
-.preview-dot.yellow {
-  background: #ffbd2e;
-}
-
-.preview-dot.green {
-  background: #27c93f;
+  display: none;
 }
 
 .preview-title {
-  font-size: 12px;
+  font-family: var(--font-num);
+  font-size: 11px;
   color: var(--muted);
-  font-weight: 500;
-  margin-left: 8px;
-  letter-spacing: 0.05em;
+  font-weight: 700;
+  margin-left: 0;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
@@ -1220,8 +1228,9 @@ nav ul a:hover {
 }
 
 .prod-title {
+  font-family: var(--font-display);
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 600;
   color: #1C1C1E;
 }
 
@@ -1233,6 +1242,7 @@ nav ul a:hover {
 }
 
 .prod-price {
+  font-family: var(--font-num);
   font-size: 16px;
   font-weight: 800;
   color: #1C1C1E;
@@ -1270,13 +1280,15 @@ nav ul a:hover {
 
 .feat-list li strong {
   display: block;
+  font-family: var(--font-display);
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--ink);
   margin-bottom: 6px;
 }
 
 .feat-list li p {
+  font-family: var(--font-sans);
   font-size: 14px;
   color: var(--ink-soft);
   line-height: 1.6;
@@ -1298,7 +1310,9 @@ nav ul a:hover {
 
 .banner-text strong {
   display: block;
-  font-size: 13px;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 600;
   color: var(--ink);
   margin-bottom: 4px;
 }
@@ -1698,9 +1712,10 @@ nav ul a:hover {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-family: "Playfair Display", serif;
-  font-size: 14px;
-  letter-spacing: 0.18em;
+  font-family: var(--font-num);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--blue);
   margin-bottom: 14px;
@@ -1712,16 +1727,18 @@ nav ul a:hover {
   border-radius: 50%;
   background: #FFFFFF;
   color: var(--blue-deep);
-  font-size: 13px;
+  font-size: 12px;
+  font-weight: 700;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-family: inherit;
+  font-family: var(--font-num);
 }
 
 .ai-tool-title {
-  font-size: 26px;
-  font-weight: 700;
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 600;
   color: var(--ink);
   margin-bottom: 18px;
   letter-spacing: -0.01em;
@@ -2166,12 +2183,14 @@ nav ul a:hover {
 }
 
 .d-car-title {
+  font-family: var(--font-display);
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--ink);
 }
 
 .d-car-sub {
+  font-family: var(--font-sans);
   font-size: 11px;
   color: var(--muted);
 }
@@ -2255,6 +2274,7 @@ nav ul a:hover {
   position: absolute;
   top: 6px;
   left: 6px;
+  font-family: var(--font-num);
   font-size: 9px;
   font-weight: 700;
   background: rgba(255, 255, 255, 0.95);
@@ -2275,13 +2295,15 @@ nav ul a:hover {
 }
 
 .d-prod-name {
+  font-family: var(--font-display);
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--ink);
   line-height: 1.35;
 }
 
 .d-prod-price {
+  font-family: var(--font-num);
   font-size: 13px;
   font-weight: 800;
   color: var(--blue);
@@ -2348,7 +2370,8 @@ nav ul a:hover {
 }
 
 .d-pin-title {
-  font-weight: 700;
+  font-family: var(--font-display);
+  font-weight: 600;
 }
 
 .d-pin-price {
@@ -2809,9 +2832,10 @@ nav ul a:hover {
 
 /* Node Styles */
 .ia-node {
+  font-family: var(--font-display);
   padding: 18px 36px;
   border-radius: 12px;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 16px;
   text-align: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
@@ -3287,7 +3311,7 @@ nav ul a:hover {
 }
 
 .desc-num {
-  font-family: "Manrope", sans-serif;
+  font-family: var(--font-num);
   font-size: 52px;
   font-weight: 800;
   color: #6B6B6B;
@@ -3447,9 +3471,9 @@ nav ul a:hover {
 }
 
 .outro-thanks-text {
-  font-family: "Syne", sans-serif;
+  font-family: var(--font-display);
   font-size: 28px;
-  font-weight: 800;
+  font-weight: 600;
   color: var(--ink);
 }
 
