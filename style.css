@@ -148,7 +148,7 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 32px;
+  gap: 48px;
 }
 
 nav ul a {
@@ -454,11 +454,57 @@ nav ul a:hover {
 /* ?�?� PROBLEM SECTION ?�?� */
 
 /* PROBLEM SECTION */
+.problem-layout-body {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  margin-top: 48px;
+}
+
+.problem-sub-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.problem-sub-title {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+.why-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  padding: 36px 32px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.why-desc {
+  font-size: 17px;
+  color: var(--ink-soft);
+  line-height: 1.85;
+  margin: 0;
+  font-weight: 400;
+}
+
+.why-desc b,
+.why-desc strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+
 .problem-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  margin-top: 56px;
+  margin-top: 0;
 }
 
 .problem-card {
@@ -1209,7 +1255,7 @@ nav ul a:hover {
 }
 
 .feat-list li::before {
-  content: "??;
+  content: '';
   position: absolute;
   left: 0;
   top: 2px;
