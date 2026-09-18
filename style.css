@@ -471,9 +471,9 @@ nav ul a:hover {
 
 .problem-sub-title {
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--ink);
+  font-size: 21px;
+  font-weight: 800;
+  color: #A67844;
   letter-spacing: -0.01em;
   text-align: left;
 }
@@ -521,15 +521,6 @@ nav ul a:hover {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
 }
 
-.problem-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--blue), var(--sky-mid));
-}
 
 .problem-card:hover {
   box-shadow: 0 16px 48px rgba(0, 0, 0, 0.08);
@@ -552,7 +543,7 @@ nav ul a:hover {
 }
 
 .problem-title {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   color: var(--ink);
   margin-bottom: 10px;
@@ -560,7 +551,7 @@ nav ul a:hover {
 }
 
 .problem-desc {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--ink-soft);
   line-height: 1.75;
   font-weight: 400;
