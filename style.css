@@ -442,7 +442,7 @@ nav ul a:hover {
 }
 
 .section-desc {
-  font-size: 27px;
+  font-size: 20px;
   color: var(--ink-soft);
   line-height: 1.85;
   max-width: 900px;
