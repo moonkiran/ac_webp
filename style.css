@@ -458,7 +458,7 @@ nav ul a:hover {
 
 .section-desc {
   font-family: var(--font-sans);
-  font-size: 20px;
+  font-size: 18px;
   color: var(--ink-soft);
   line-height: 1.85;
   max-width: 900px;
