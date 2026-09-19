@@ -39,12 +39,10 @@
         </a>
       </div>
       <ul>
-        <li><a href="#flowchart">서비스 구조도</a></li>
-        <li><a href="#problem">만든 이유</a></li>
-        <li><a href="#persona">페르소나</a></li>
-        <li><a href="#features">핵심기능</a></li>
-        <li><a href="#design-ui">디자인 & UI</a></li>
-        <li><a href="#ai-tools">AI활용</a></li>
+        <li><a href="#problem">기획 배경</a></li>
+        <li><a href="#features">구조 &amp; 핵심기능</a></li>
+        <li><a href="#design-ui">디자인 &amp; UI</a></li>
+        <li><a href="#ai-tools">AI 활용</a></li>
         <li><a href="#outro">마무리</a></li>
       </ul>
       <span class="nav-tag">Portfolio 2026</span>
@@ -84,90 +82,18 @@
       </div>
     </section>
 
-    <!-- FLOWCHART -->
-    <section class="flowchart-section" id="flowchart">
-      <div class="flowchart-inner">
-        <div class="section-label">01 · 서비스 구조도</div>
-        <h2 class="section-title">차량 맞춤형 쇼핑을 <em>하나의 흐름으로 연결했습니다.</em></h2>
-
-        <div
-          class="ia-wrap"
-          style="
-            margin-top: 80px;
-            position: relative;
-            font-family: &quot;Noto Sans KR&quot;, sans-serif;
-          "
-        >
-          <!-- Level 1: App Setup -->
-          <div class="ia-node red">쇼핑몰 접속</div>
-          <div class="ia-v-line"></div>
-
-          <!-- Level 2: Login -->
-          <div class="ia-node green">차고 등록 (차종 설정)</div>
-          <div class="ia-v-line"></div>
-
-          <!-- Level 3: Categories -->
-          <div class="ia-h-bridge"></div>
-          <div class="ia-grid">
-            <!-- Category 1 -->
-            <div class="ia-col">
-              <div class="ia-node blue">탐색 &amp; 컬렉션</div>
-              <div class="ia-sub-wrap">
-                <div class="ia-sub-box">카테고리 필터링</div>
-                <div class="ia-sub-box">차종별 자동 매칭</div>
-                <div class="ia-sub-box">추천 컬렉션</div>
-              </div>
-            </div>
-
-            <!-- Category 2 -->
-            <div class="ia-col">
-              <div class="ia-node blue">스타일피드</div>
-              <div class="ia-sub-wrap">
-                <div class="ia-sub-box">스타일 둘러보기</div>
-                <div class="ia-sub-box">컨셉별 피드 보기</div>
-                <div class="ia-sub-box">내 스타일 공유하기</div>
-              </div>
-            </div>
-
-            <!-- Category 3 -->
-            <div class="ia-col">
-              <div class="ia-node blue">장바구니</div>
-              <div class="ia-sub-wrap">
-                <div class="ia-sub-box">호환성 검증 배지</div>
-                <div class="ia-sub-box">로컬스토리지 동기화</div>
-                <div class="ia-sub-box">견적서 임시 저장</div>
-              </div>
-            </div>
-
-            <!-- Category 4 -->
-            <div class="ia-col">
-              <div class="ia-node blue">결제 &amp; 주문</div>
-              <div class="ia-sub-wrap">
-                <div class="ia-sub-box">토스페이먼츠 V2</div>
-                <div class="ia-sub-box">배송 정보 입력</div>
-              </div>
-            </div>
-
-            <!-- Category 5 -->
-            <div class="ia-col">
-              <div class="ia-node blue">어드민 설정</div>
-              <div class="ia-sub-wrap">
-                <div class="ia-sub-box">주문 내역 조회</div>
-                <div class="ia-sub-box">재고 상태 관리</div>
-                <div class="ia-sub-box">호환 차량 DB 매핑</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 만든 이유 -->
+    <!-- =========================================
+         01. 기획 배경 & 페르소나 (만든 이유 + 페르소나 통합)
+         ========================================= -->
     <section class="section" id="problem">
-      <div class="section-label">02 · 만든 이유</div>
+      <div class="section-label">01 · 기획 배경</div>
       <h2 class="section-title">
         자동차 용품 온라인 쇼핑의 <em>문제점을 정의했습니다.</em>
       </h2>
+      <p class="section-desc">
+        차종·연식마다 복잡한 호환성 문제와 정보 과잉으로 인한 피로도를 짚어내고,<br />
+        자신만의 차를 가꾸고 싶은 대표 사용자 그룹의 페인포인트를 분석했습니다.
+      </p>
 
       <div class="problem-layout-body">
         <!-- 01 why -->
@@ -234,110 +160,198 @@
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- PERSONA -->
-    <section class="persona-section" id="persona">
-      <div class="persona-bg-dots"></div>
-      <div class="persona-inner">
-        <div class="section-label">03 · 페르소나</div>
-        <h2 class="section-title"><em>3명의 대표 페르소나</em>를 정의했습니다.</h2>
-        <p class="section-desc" style="color: #1C1C1E">
-          자신만의 차를 가꾸고 싶은 3명의 대표 페르소나,<br />
-          그들이 차량 용품을 구매할 때 겪는 페인포인트를 해결하는 데 집중했습니다.
-        </p>
+      <!-- 구분선 및 페르소나 서브섹션 시작 -->
+      <div class="section-sub-divider"></div>
+      <div id="persona" style="position: relative; top: -60px;"></div>
 
-        <div class="persona-grid">
-          <!-- 페르소나 1 -->
-          <div class="persona-card fade-up">
-            <div class="persona-avatar">👨</div>
-            <div class="persona-name">박도현 <span class="persona-age">41세</span></div>
-            <div class="persona-tags">
-              <span class="persona-tag">실용성 중시</span>
-              <span class="persona-tag">시간 가치</span>
-              <span class="persona-tag">실패 없는 쇼핑</span>
-            </div>
-            <p class="persona-story">
-              자동차 커스텀에 관심은 많으나 바쁜 일상 속에서 튜닝샵을
-              돌아다니거나 수많은 상품을 비교하는 데 시간을 쓰고 싶어 하지 않는
-              실용주의 기획자입니다.
-            </p>
-            <div class="persona-quote">
-              "시간은 아끼고 <strong>퀄리티는 확실히 보장받고</strong> 싶어요."
-            </div>
-            <div class="persona-pain">
-              <div class="persona-pain-label">구매 성향 &amp; Fit</div>
-              <p>
-                '검증된 데이터'와 리뷰를 통해 실패 없는 쇼핑을 선호합니다.
-                오토캔버스의 'MONTHLY TREND'와 신뢰도 높은 '테마별 패키지'를
-                제안받아 탐색 시간을 최소화하고 바로 구매를 진행합니다.
-              </p>
-            </div>
+      <div class="feat-num-badge feat-badge-blue">Target Persona</div>
+      <h3 class="feat-block-title">
+        문제를 겪는 <em>3명의 대표 페르소나를 설정했습니다.</em>
+      </h3>
+      <p class="feat-block-desc" style="margin-bottom: 32px;">
+        자신만의 차를 가꾸고 싶은 3명의 페르소나, 그들이 차량 용품을 구매할 때 겪는 페인포인트를 해결하는 데 집중했습니다.
+      </p>
+
+      <div class="persona-grid">
+        <!-- 페르소나 1 -->
+        <div class="persona-card fade-up">
+          <div class="persona-avatar">👨</div>
+          <div class="persona-name">박도현 <span class="persona-age">41세</span></div>
+          <div class="persona-tags">
+            <span class="persona-tag">실용성 중시</span>
+            <span class="persona-tag">시간 가치</span>
+            <span class="persona-tag">실패 없는 쇼핑</span>
           </div>
-
-          <!-- 페르소나 2 -->
-          <div class="persona-card fade-up">
-            <div class="persona-avatar">👨</div>
-            <div class="persona-name">서지훈 <span class="persona-age">32세</span></div>
-            <div class="persona-tags">
-              <span class="persona-tag">감각적 스타일</span>
-              <span class="persona-tag">커스텀 셋업</span>
-              <span class="persona-tag">SNS 공유</span>
-            </div>
-            <p class="persona-story">
-              남들과 차별화되는 자신만의 감각을 드러내기를 좋아하며, 자동차를
-              자신의 아이덴티티 브랜드로 여깁니다. 완벽히 세팅된 인테리어 샷을
-              SNS에 자랑하고 소통하는 컬렉터입니다.
-            </p>
-            <div class="persona-quote">
-              "내 차를 <strong>SNS에 올릴 수 있을 만큼</strong> 특별하게 꾸밀
-              거예요."
-            </div>
-            <div class="persona-pain">
-              <div class="persona-pain-label">구매 성향 &amp; Fit</div>
-              <p>
-                가격보다는 '취향의 일치'가 최우선 기준입니다. 오토캔버스의
-                세련된 UI와 고품격 시각 룩에 체류하며, 테마별 큐레이션의 다양한
-                제품 조화법에 영감을 얻어 세트로 구매하는 단골 고객입니다.
-              </p>
-            </div>
+          <p class="persona-story">
+            자동차 커스텀에 관심은 많으나 바쁜 일상 속에서 튜닝샵을
+            돌아다니거나 수많은 상품을 비교하는 데 시간을 쓰고 싶어 하지 않는
+            실용주의 기획자입니다.
+          </p>
+          <div class="persona-quote">
+            "시간은 아끼고 <strong>퀄리티는 확실히 보장받고</strong> 싶어요."
           </div>
-
-          <!-- 페르소나 3 -->
-          <div class="persona-card fade-up">
-            <div class="persona-avatar">👩</div>
-            <div class="persona-name">이수아 <span class="persona-age">28세</span></div>
-            <div class="persona-tags">
-              <span class="persona-tag">첫 차 오너</span>
-              <span class="persona-tag">쉬운 큐레이션</span>
-              <span class="persona-tag">시행착오 제로</span>
-            </div>
-            <p class="persona-story">
-              최근 생애 첫 차를 구매한 초보 오너입니다. 차를 감각적으로 꾸미고는
-              싶지만 복잡하고 낯선 자동차 용어나 튜닝 정보 비교가 큰 스트레스로
-              다가옵니다.
+          <div class="persona-pain">
+            <div class="persona-pain-label">구매 성향 &amp; Fit</div>
+            <p>
+              '검증된 데이터'와 리뷰를 통해 실패 없는 쇼핑을 선호합니다.
+              오토캔버스의 'MONTHLY TREND'와 신뢰도 높은 '테마별 패키지'를
+              제안받아 탐색 시간을 최소화하고 바로 구매를 진행합니다.
             </p>
-            <div class="persona-quote">
-              "시행착오 없이 <strong>완벽하게 설계된 정답</strong>만 원해요."
-            </div>
-            <div class="persona-pain">
-              <div class="persona-pain-label">구매 성향 &amp; Fit</div>
-              <p>
-                스스로 물리적인 조립을 고민하거나 부품 궁합을 비교하는
-                시행착오를 기피합니다. 맞춤 컬렉션 추천를 통해 통째로 완성품을
-                선택합니다.
-              </p>
-            </div>
+          </div>
+        </div>
+
+        <!-- 페르소나 2 -->
+        <div class="persona-card fade-up">
+          <div class="persona-avatar">👨</div>
+          <div class="persona-name">서지훈 <span class="persona-age">32세</span></div>
+          <div class="persona-tags">
+            <span class="persona-tag">감각적 스타일</span>
+            <span class="persona-tag">커스텀 셋업</span>
+            <span class="persona-tag">SNS 공유</span>
+          </div>
+          <p class="persona-story">
+            남들과 차별화되는 자신만의 감각을 드러내기를 좋아하며, 자동차를
+            자신의 아이덴티티 브랜드로 여깁니다. 완벽히 세팅된 인테리어 샷을
+            SNS에 자랑하고 소통하는 컬렉터입니다.
+          </p>
+          <div class="persona-quote">
+            "내 차를 <strong>SNS에 올릴 수 있을 만큼</strong> 특별하게 꾸밀
+            거예요."
+          </div>
+          <div class="persona-pain">
+            <div class="persona-pain-label">구매 성향 &amp; Fit</div>
+            <p>
+              가격보다는 '취향의 일치'가 최우선 기준입니다. 오토캔버스의
+              세련된 UI와 고품격 시각 룩에 체류하며, 테마별 큐레이션의 다양한
+              제품 조화법에 영감을 얻어 세트로 구매하는 단골 고객입니다.
+            </p>
+          </div>
+        </div>
+
+        <!-- 페르소나 3 -->
+        <div class="persona-card fade-up">
+          <div class="persona-avatar">👩</div>
+          <div class="persona-name">이수아 <span class="persona-age">28세</span></div>
+          <div class="persona-tags">
+            <span class="persona-tag">첫 차 오너</span>
+            <span class="persona-tag">쉬운 큐레이션</span>
+            <span class="persona-tag">시행착오 제로</span>
+          </div>
+          <p class="persona-story">
+            최근 생애 첫 차를 구매한 초보 오너입니다. 차를 감각적으로 꾸미고는
+            싶지만 복잡하고 낯선 자동차 용어나 튜닝 정보 비교가 큰 스트레스로
+            다가옵니다.
+          </p>
+          <div class="persona-quote">
+            "시행착오 없이 <strong>완벽하게 설계된 정답</strong>만 원해요."
+          </div>
+          <div class="persona-pain">
+            <div class="persona-pain-label">구매 성향 &amp; Fit</div>
+            <p>
+              스스로 물리적인 조립을 고민하거나 부품 궁합을 비교하는
+              시행착오를 기피합니다. 맞춤 컬렉션 추천를 통해 통째로 완성품을
+              선택합니다.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FEATURES SECTION -->
+    <!-- =========================================
+         02. 서비스 구조 & 핵심 기능 (구조도 + 핵심기능 통합)
+         ========================================= -->
     <section class="features-section" id="features">
       <div class="features-inner">
-        <div class="section-label">04 · 핵심 기능</div>
-        <h2 class="feat-main-title">앱의 핵심 기능을 <em>미리 보세요</em></h2>
+        <div id="flowchart" style="position: relative; top: -60px;"></div>
+        <div class="section-label">02 · 서비스 구조 &amp; 핵심 기능</div>
+        <h2 class="feat-main-title">
+          차량 맞춤형 쇼핑 흐름과 <em>3대 핵심 기능</em>
+        </h2>
+        <p class="section-desc">
+          쇼핑몰 진입부터 내 차고 등록, 맞춤 탐색까지의 전체 IA 트리와<br />
+          문제를 직접 해결하는 3가지 핵심 프로덕트 기능을 구현했습니다.
+        </p>
+
+        <!-- 1. 서비스 구조도 (IA 트리) -->
+        <div class="feat-num-badge feat-badge-blue">Information Architecture</div>
+        <h3 class="feat-block-title">
+          차량 맞춤형 쇼핑을 <em>하나의 흐름으로 연결했습니다.</em>
+        </h3>
+
+        <div
+          class="ia-wrap"
+          style="
+            margin-top: 48px;
+            margin-bottom: 24px;
+            position: relative;
+            font-family: &quot;Noto Sans KR&quot;, sans-serif;
+          "
+        >
+          <!-- Level 1: App Setup -->
+          <div class="ia-node red">쇼핑몰 접속</div>
+          <div class="ia-v-line"></div>
+
+          <!-- Level 2: Login -->
+          <div class="ia-node green">차고 등록 (차종 설정)</div>
+          <div class="ia-v-line"></div>
+
+          <!-- Level 3: Categories -->
+          <div class="ia-h-bridge"></div>
+          <div class="ia-grid">
+            <!-- Category 1 -->
+            <div class="ia-col">
+              <div class="ia-node blue">탐색 &amp; 컬렉션</div>
+              <div class="ia-sub-wrap">
+                <div class="ia-sub-box">카테고리 필터링</div>
+                <div class="ia-sub-box">차종별 자동 매칭</div>
+                <div class="ia-sub-box">추천 컬렉션</div>
+              </div>
+            </div>
+
+            <!-- Category 2 -->
+            <div class="ia-col">
+              <div class="ia-node blue">스타일피드</div>
+              <div class="ia-sub-wrap">
+                <div class="ia-sub-box">스타일 둘러보기</div>
+                <div class="ia-sub-box">컨셉별 피드 보기</div>
+                <div class="ia-sub-box">내 스타일 공유하기</div>
+              </div>
+            </div>
+
+            <!-- Category 3 -->
+            <div class="ia-col">
+              <div class="ia-node blue">장바구니</div>
+              <div class="ia-sub-wrap">
+                <div class="ia-sub-box">호환성 검증 배지</div>
+                <div class="ia-sub-box">로컬스토리지 동기화</div>
+                <div class="ia-sub-box">견적서 임시 저장</div>
+              </div>
+            </div>
+
+            <!-- Category 4 -->
+            <div class="ia-col">
+              <div class="ia-node blue">결제 &amp; 주문</div>
+              <div class="ia-sub-wrap">
+                <div class="ia-sub-box">토스페이먼츠 V2</div>
+                <div class="ia-sub-box">배송 정보 입력</div>
+              </div>
+            </div>
+
+            <!-- Category 5 -->
+            <div class="ia-col">
+              <div class="ia-node blue">어드민 설정</div>
+              <div class="ia-sub-wrap">
+                <div class="ia-sub-box">주문 내역 조회</div>
+                <div class="ia-sub-box">재고 상태 관리</div>
+                <div class="ia-sub-box">호환 차량 DB 매핑</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 구분선 -->
+        <div class="section-sub-divider"></div>
 
         <!-- ─── FEATURE 01 ─── -->
         <div class="feat-block">
@@ -607,7 +621,7 @@
 
     <!-- DESIGN & UI SECTION -->
     <section id="design-ui" class="section">
-      <div class="section-label">05 · 디자인 & UI</div>
+      <div class="section-label">03 · 디자인 &amp; UI</div>
       <h2 class="section-title">정보를 명확하게, <em>자동차의 감성을 담백하게</em></h2>
       <p class="section-desc">
         자동차 용품을 탐색하는 과정에서 불필요한 장식을 줄이고, 상품과 핵심 정보에 집중할 수 있도록 여백 중심의 레이아웃을 설계했습니다.<br />
@@ -1030,15 +1044,21 @@
       </div>
     </section>
 
-    <!-- AI TOOLS SECTION -->
+    <!-- =========================================
+         04. AI 활용 (도구 + 대화의 흔적 통합)
+         ========================================= -->
     <section class="ai-tools-section" id="ai-tools">
       <div class="ai-tools-inner">
-        <div class="section-label">06 · AI 활용</div>
-        <h2 class="section-title">AI와 함께한<em>제작 과정</em></h2>
+        <div class="section-label">04 · AI 활용</div>
+        <h2 class="section-title">AI와 함께한 <em>제작 과정과 대화의 흔적</em></h2>
         <p class="section-desc">
-          기획부터 최종 프론트엔드 연동까지 <br />
-          단계별로 가장 적합한 AI 도구를 워크플로우에 조화롭게 결합했습니다.
+          기획부터 최종 프론트엔드 연동까지 단계별로 최적의 AI 도구를 워크플로우에 결합하고,<br />
+          실시간 프롬프트 디버깅을 통해 높은 완성도의 이커머스 경험을 구축했습니다.
         </p>
+
+        <!-- 1. AI Tools Pipeline -->
+        <div class="feat-num-badge feat-badge-blue">AI Pipeline</div>
+        <h3 class="feat-block-title">단계별 최적의 <em>AI 도구 결합</em></h3>
 
         <div class="ai-tools-grid">
           <div class="ai-tool-card">
@@ -1086,68 +1106,68 @@
             </p>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- AI CHAT SECTION -->
-    <section class="ai-chat-section" id="ai-chat">
-      <div class="ai-chat-inner">
-        <h2 class="section-title">'AutoCanvas'를 만든<em>대화의 흔적</em></h2>
-        <p class="section-desc">
-          AI에게 전달하는 구체적인 컨셉과 기술 스펙팅이 <br/>
-          완성도 높은 이커머스 경험의 원천이 되었습니다.
-        </p>
+        <!-- 구분선 및 AI 대화 서브섹션 시작 -->
+        <div class="section-sub-divider"></div>
+        <div class="ai-chat-section" id="ai-chat" style="padding: 0; overflow: visible;">
+          <!-- 2. AI 대화의 흔적 -->
+          <div class="feat-num-badge feat-badge-blue">Prompt Logs</div>
+          <h3 class="feat-block-title">'AutoCanvas'를 만든 <em>실제 대화의 기록</em></h3>
+          <p class="feat-block-desc" style="margin-bottom: 32px;">
+            AI에게 전달한 구체적인 컨셉과 기술 스펙팅이 완성도 높은 이커머스 경험의 원천이 되었습니다.
+          </p>
 
-        <div class="ai-chat-thread">
-          <div class="chat-bubble me">
-            <div class="chat-meta">Me · Prompt</div>
-            자동차 프리미엄 커스텀 쇼핑몰 이름을 지어주고 싶어. 자동차 미학과
-            도화지처럼 자유로운 커스터마이징을 합친 네이밍을 추천해줘.
-          </div>
-          <div class="chat-bubble ai">
-            <div class="chat-meta">AI · Response</div>
-            '오토캔버스(AutoCanvas)'가 어떨까요? '자동차(Auto)'와
-            '도화지(Canvas)'를 결합하여 내 취향에 맞게 차량 인테리어를 직접 그릴
-            수 있다는 직관적인 감성을 제공합니다.
-          </div>
+          <div class="ai-chat-thread" style="margin-top: 32px;">
+            <div class="chat-bubble me">
+              <div class="chat-meta">Me · Prompt</div>
+              자동차 프리미엄 커스텀 쇼핑몰 이름을 지어주고 싶어. 자동차 미학과
+              도화지처럼 자유로운 커스터마이징을 합친 네이밍을 추천해줘.
+            </div>
+            <div class="chat-bubble ai">
+              <div class="chat-meta">AI · Response</div>
+              '오토캔버스(AutoCanvas)'가 어떨까요? '자동차(Auto)'와
+              '도화지(Canvas)'를 결합하여 내 취향에 맞게 차량 인테리어를 직접 그릴
+              수 있다는 직관적인 감성을 제공합니다.
+            </div>
 
-          <div class="chat-bubble me">
-            <div class="chat-meta">Me · Prompt</div>
-            차종별로 호환되는 액세서리를 찾아주는 로직을 만드려고 하는데, 유저가
-            자신의 차량 모델명을 입력했을 때 실시간으로 적합 여부를 판단해주는
-            UI는 어떻게 구성할까?
-          </div>
-          <div class="chat-bubble ai">
-            <div class="chat-meta">AI · Response</div>
-            필터 상단에 '내 차량 등록' 위젯을 설치하여 차종을 등록하게 하고,
-            활성화 시 쇼핑몰 내 상품 피드에 '호환성 인증 배지'를 실시간으로
-            부착해 주는 흐름이 가장 신뢰를 줄 수 있습니다.
-          </div>
+            <div class="chat-bubble me">
+              <div class="chat-meta">Me · Prompt</div>
+              차종별로 호환되는 액세서리를 찾아주는 로직을 만드려고 하는데, 유저가
+              자신의 차량 모델명을 입력했을 때 실시간으로 적합 여부를 판단해주는
+              UI는 어떻게 구성할까?
+            </div>
+            <div class="chat-bubble ai">
+              <div class="chat-meta">AI · Response</div>
+              필터 상단에 '내 차량 등록' 위젯을 설치하여 차종을 등록하게 하고,
+              활성화 시 쇼핑몰 내 상품 피드에 '호환성 인증 배지'를 실시간으로
+              부착해 주는 흐름이 가장 신뢰를 줄 수 있습니다.
+            </div>
 
-          <div class="chat-bubble me">
-            <div class="chat-meta">Me · Prompt</div>
-            토스페이먼츠 V2 결제 연동 과정에서 기존 V1 API와 비교해 위젯 렌더링
-            방식의 보안상 이점과 코드상 변경점을 요약해줘.
-          </div>
-          <div class="chat-bubble ai">
-            <div class="chat-meta">AI · Response</div>
-            V2 결제위젯은 클라이언트 사이드 변조를 막기 위해 서버
-            서명(Signature) 검증을 채택했습니다. 또한, 토스측 iframe 모듈이
-            격리된 레이어에 안전하게 마운트되므로 정보 유출 위험이 낮고, 결제
-            처리 로직이 단 몇 줄의 위젯 마운트 API로 매우 명료해집니다.
-          </div>
+            <div class="chat-bubble me">
+              <div class="chat-meta">Me · Prompt</div>
+              토스페이먼츠 V2 결제 연동 과정에서 기존 V1 API와 비교해 위젯 렌더링
+              방식의 보안상 이점과 코드상 변경점을 요약해줘.
+            </div>
+            <div class="chat-bubble ai">
+              <div class="chat-meta">AI · Response</div>
+              V2 결제위젯은 클라이언트 사이드 변조를 막기 위해 서버
+              서명(Signature) 검증을 채택했습니다. 또한, 토스측 iframe 모듈이
+              격리된 레이어에 안전하게 마운트되므로 정보 유출 위험이 낮고, 결제
+              처리 로직이 단 몇 줄의 위젯 마운트 API로 매우 명료해집니다.
+            </div>
 
-          <div class="chat-bubble me">
-            <div class="chat-meta">Me · Prompt</div>
-            장바구니에 담은 물건들이 브라우저 탭을 종료했다가 들어와도 안전하게
-            유지되도록 상태 관리를 최적화하고 싶어.
-          </div>
-          <div class="chat-bubble ai">
-            <div class="chat-meta">AI · Response</div>
-            장바구니 상태(JSON)를 로컬스토리지에 영속화하고, 장바구니 변경 시
-            `StorageEvent`나 커스텀 이벤트를 발행하게 합니다. 이를 통해 타
-            탭과의 데이터 불일치를 막고 헤더의 카운트 배지가 실시간 동기화되는
-            깔끔한 설계를 구현할 수 있습니다.
+            <div class="chat-bubble me">
+              <div class="chat-meta">Me · Prompt</div>
+              장바구니에 담은 물건들이 브라우저 탭을 종료했다가 들어와도 안전하게
+              유지되도록 상태 관리를 최적화하고 싶어.
+            </div>
+            <div class="chat-bubble ai">
+              <div class="chat-meta">AI · Response</div>
+              장바구니 상태(JSON)를 로컬스토리지에 영속화하고, 장바구니 변경 시
+              `StorageEvent`나 커스텀 이벤트를 발행하게 합니다. 이를 통해 타
+              탭과의 데이터 불일치를 막고 헤더의 카운트 배지가 실시간 동기화되는
+              깔끔한 설계를 구현할 수 있습니다.
+            </div>
           </div>
         </div>
       </div>
@@ -1156,7 +1176,7 @@
     <!-- ============ Outro ============ -->
     <section class="outro-section" id="outro">
       <div class="outro-container">
-        <div class="section-label">07 · 마무리</div>
+        <div class="section-label">05 · 마무리</div>
         <h2 class="outro-title-main">우리는 최고의 <em>동료</em>입니다</h2>
         <img
           src="img/human_ai_collaboration.png"
@@ -1183,10 +1203,11 @@
           <div class="footer-logo">Thank you.</div>
           <div class="footer-links">
             <a href="#top">Top</a>
-            <a href="#flowchart">Structure</a>
-            <a href="#problem">Story</a>
-            <a href="#design-ui">Design</a>
-            <a href="#ai-chat">AI Chat</a>
+            <a href="#problem">Story &amp; Persona</a>
+            <a href="#features">Structure &amp; Features</a>
+            <a href="#design-ui">Design &amp; UI</a>
+            <a href="#ai-tools">AI Collaboration</a>
+            <a href="#outro">Outro</a>
           </div>
         </div>
         <div class="footer-bottom">
